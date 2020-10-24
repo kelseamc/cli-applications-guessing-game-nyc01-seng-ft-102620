@@ -1,7 +1,7 @@
 def run_guessing_game
   x = rand(6) + 1
   #puts "Please guess a number between 1 and 6"
-  input = gets.chomp
+  input = gets.to_i
   if input == "exit"
     puts "Goodbye!"
   elsif input == x
